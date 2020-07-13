@@ -1,0 +1,428 @@
+body {
+  background: #ffffff !important;
+}
+
+body #ccm-toolbar {
+  display: none;
+}
+
+.toggle-sidebar {
+  width: 50px;
+  height: 50px;
+  padding: 12px 10px;
+  background: #f16379;
+  background: linear-gradient(45deg, #f16379 0, #f36e66 70%);
+  border-radius: 0 6px 6px 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: absolute;
+  left: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.toggle-sidebar .icon-bar {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  display: block;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.toggle-sidebar .icon-bar + .icon-bar {
+  margin-top: 8px;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .container {
+  width: 100%;
+  padding: 0;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #f794a4;
+  background: linear-gradient(230deg, #f794a4 0%, #fdd6bd 100%);
+  width: 100%;
+  height: 720px;
+  border-radius: 0 20px 20px 0;
+  padding: 0;
+  position: relative;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar.hide {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar.hide .toggle-sidebar {
+  left: 100%;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar.hide .toggle-sidebar .icon-bar:first-child {
+  opacity: 0;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar.hide .toggle-sidebar .icon-bar:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar.hide .toggle-sidebar .icon-bar:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -10px;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar.hide + .content-area {
+  width: 100%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar:hover .toggle-sidebar {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+@media screen and (min-width: 768px) {
+  #ccm-dashboard-page #ccm-dashboard-content .sidebar {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #ccm-dashboard-page #ccm-dashboard-content .sidebar {
+    width: 30%;
+  }
+}
+
+@media screen and (min-height: 480px) {
+  #ccm-dashboard-page #ccm-dashboard-content .sidebar {
+    height: 100vh;
+  }
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar ul li a {
+  color: #ffffff;
+  min-height: auto;
+  display: block;
+  position: relative;
+  padding: 20px 20px 20px 40px;
+  border-radius: 50px 0 0 50px;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar ul li a:before {
+  background-position: 0 center;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar ul li + li {
+  margin-top: 0;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar ul#side-composer-menu li {
+  margin-bottom: 10px;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar ul#side-composer-menu li a:hover, #ccm-dashboard-page #ccm-dashboard-content .sidebar ul#side-composer-menu li a.active {
+  color: #f37063;
+  background-color: #fff;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .leading-text {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Bai Jamjuree", "Roboto", sans-serif;
+  margin: 3rem 0;
+}
+
+@media screen and (min-width: 1200px) {
+  #ccm-dashboard-page #ccm-dashboard-content .sidebar .leading-text {
+    font-size: 30px;
+  }
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .btn-white {
+  background-color: #fff;
+  color: #f16379;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 80px;
+  border-radius: 50px;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .btn-white:hover {
+  border: 0;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .side-logo {
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .btn-social {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.5rem 0 2rem;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .btn-social li {
+  margin-top: 0;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .btn-social li a {
+  padding: 0;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .btn-social li a:hover {
+  opacity: 0.75;
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .btn-social li + li {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  #ccm-dashboard-page #ccm-dashboard-content .sidebar .text-email a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #ccm-dashboard-page #ccm-dashboard-content .sidebar .text-email a {
+    font-size: 120%;
+  }
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .sidebar .widget {
+  width: 100%;
+  padding: 30px 0 30px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #ccm-dashboard-page #ccm-dashboard-content .sidebar .widget {
+    padding: 30px 0 30px 10%;
+  }
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .content-area {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  height: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+@media screen and (min-width: 769px) {
+  #ccm-dashboard-page #ccm-dashboard-content .content-area {
+    width: 70%;
+    padding-left: 30px;
+  }
+  #ccm-dashboard-page #ccm-dashboard-content .content-area.fullscreen {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+#ccm-dashboard-page #ccm-dashboard-content .content-area .user-dashboard-menu {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#ccm-dashboard-page .ccm-pane {
+  border-radius: 6px 6px 0 0;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  background: #fff;
+  color: inherit;
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-header {
+  color: #fff;
+  background: #f794a4;
+  background: linear-gradient(45deg, #f794a4 0, #fdd6bd 70%);
+  padding: 15px 30px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px 6px 0 0;
+  border: none;
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-header h3 {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  #ccm-dashboard-page .ccm-pane .ccm-pane-header h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #ccm-dashboard-page .ccm-pane .ccm-pane-header h3 {
+    font-size: 120%;
+  }
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-header .ccm-pane-header-icons {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-body {
+  padding: 30px;
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-body h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-body ul.composer-menu {
+  margin: 30px 0 0;
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-body ul.composer-menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-body ul.composer-menu li + li {
+  margin-top: 20px;
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-body ul.composer-menu li a {
+  width: 300px;
+  color: #fff;
+  border-radius: 50px;
+  padding: 20px 30px;
+  text-align: center;
+  background: #f794a4;
+  background: linear-gradient(45deg, #fdd6bd 0, #f794a4 70%);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  #ccm-dashboard-page .ccm-pane .ccm-pane-body ul.composer-menu li a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #ccm-dashboard-page .ccm-pane .ccm-pane-body ul.composer-menu li a {
+    font-size: 120%;
+  }
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-body ul.composer-menu li a:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: -20px;
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-body ul.composer-menu li:first-child a:before {
+  background-image: url(../img/icon_write.png);
+}
+
+#ccm-dashboard-page .ccm-pane .ccm-pane-body ul.composer-menu li:last-child a:before {
+  background-image: url(../img/icon_add.png);
+}
+/*# sourceMappingURL=dashboard.css.map */

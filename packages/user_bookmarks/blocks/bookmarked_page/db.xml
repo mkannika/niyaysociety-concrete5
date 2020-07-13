@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+<table name="btBookmark">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="name" type="c" size="100">
+			<notnull/>
+		</field>
+</table>
+<table name="bookmarkedPage">
+    <field name="name" type="C" size="100">
+      <notnull/>
+    </field>   
+    <field name="description" type="X" size="1000">
+      <notnull/>
+    </field>  
+    <field name="url" type="c" size="100">
+      <notnull/>
+    </field>    
+    <field name="uID" type="I" size="10">
+      <notnull/>
+    </field>   
+    <field name="cID" type="I" size="10">
+      <notnull/>
+    </field>  
+</table>  
+</schema>

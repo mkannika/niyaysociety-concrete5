@@ -1,0 +1,386 @@
+body .ccm-ui {
+  width: 100%;
+  height: 100vh;
+}
+
+body .ccm-ui .container {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+body .ccm-ui a {
+  color: #fff;
+}
+
+body .ccm-ui #ccm-logo {
+  display: none;
+}
+
+body .ccm-ui .page-login {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body .ccm-ui .sidebar {
+  width: 100%;
+  height: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f05f83;
+  background: linear-gradient(45deg, #f05f83 0%, #f77062 70%);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  body .ccm-ui .sidebar {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body .ccm-ui .sidebar {
+    width: 30%;
+  }
+}
+
+@media screen and (min-height: 480px) {
+  body .ccm-ui .sidebar {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body .ccm-ui .sidebar {
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+body .ccm-ui .sidebar .leading-text {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Bai Jamjuree", "Roboto", sans-serif;
+  margin: 3rem 0;
+}
+
+@media screen and (min-width: 1200px) {
+  body .ccm-ui .sidebar .leading-text {
+    font-size: 30px;
+  }
+}
+
+body .ccm-ui .sidebar .btn-white {
+  background-color: #fff;
+  color: #f16379;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 80px;
+  border-radius: 50px;
+}
+
+body .ccm-ui .sidebar .btn-white:hover {
+  border: 0;
+}
+
+body .ccm-ui .sidebar .side-logo .img-logo {
+  width: 230px;
+  display: block;
+}
+
+body .ccm-ui .sidebar .btn-social {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.5rem 0 2rem;
+}
+
+body .ccm-ui .sidebar .btn-social li {
+  margin-top: 0;
+}
+
+body .ccm-ui .sidebar .btn-social li a {
+  padding: 0;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+body .ccm-ui .sidebar .btn-social li a:hover {
+  opacity: 0.75;
+}
+
+body .ccm-ui .sidebar .btn-social li + li {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  body .ccm-ui .sidebar .text-email a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body .ccm-ui .sidebar .text-email a {
+    font-size: 120%;
+  }
+}
+
+body .ccm-ui .toggle-login {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  padding: 8px;
+  right: 10px;
+  top: 10px;
+  border-radius: 4px;
+  border: none;
+  background: #f16379;
+  background: linear-gradient(45deg, #f16379 0, #f36e66 70%);
+  border-radius: 4px;
+}
+
+body .ccm-ui .toggle-login .icon {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+body .ccm-ui .toggle-login .icon:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 15px;
+}
+
+body .ccm-ui .toggle-login .icon:nth-child(2) {
+  opacity: 0;
+}
+
+body .ccm-ui .toggle-login .icon:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -5px;
+}
+
+body .ccm-ui .toggle-login .icon + .icon {
+  margin-top: 8px;
+}
+
+body .ccm-ui .content-area {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  overflow-y: scroll;
+  height: 720px;
+}
+
+@media screen and (min-width: 768px) {
+  body .ccm-ui .content-area {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body .ccm-ui .content-area {
+    width: 70%;
+  }
+}
+
+@media screen and (min-height: 480px) {
+  body .ccm-ui .content-area {
+    height: 100vh;
+  }
+}
+
+body .ccm-ui .content-area .alert {
+  min-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .ccm-ui .content-area .page-header {
+  padding-bottom: 0;
+  margin: 0 0 2.5rem;
+  border-bottom: none;
+}
+
+body .ccm-ui .content-area .page-header h1 {
+  line-height: 1.5;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+body .ccm-ui .content-area .sec-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+body .ccm-ui .content-area .sec-area.sec-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+body .ccm-ui .content-area .sec-area .input-gradient {
+  position: relative;
+}
+
+body .ccm-ui .content-area .sec-area .input-gradient input[type="text"],
+body .ccm-ui .content-area .sec-area .input-gradient input[type="email"],
+body .ccm-ui .content-area .sec-area .input-gradient input[type="password"] {
+  font-family: "Bai Jamjuree", "Roboto", sans-serif;
+  font-family: 14px;
+  letter-spacing: 0;
+}
+
+body .ccm-ui .content-area .sec-area .input-gradient .input-append span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 0 50px 50px 0;
+  border: none;
+  background: #f05f83;
+  background: linear-gradient(45deg, #f05f83 0%, #f77062 70%);
+  z-index: 10;
+}
+
+body .ccm-ui .content-area .sec-area .input-gradient .input-append span i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: calc(50% - 2px) 50%;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  left: 0;
+  top: 0;
+}
+
+body .ccm-ui .content-area .sec-area .input-gradient .input-append span i.icon-eye-open {
+  background-image: url("/themes/niyaysociety2020/img/icon_view.svg");
+}
+
+body .ccm-ui .content-area .sec-area .input-gradient .input-append span i.icon-eye-close {
+  background-image: url("/themes/niyaysociety2020/img/icon_view_close.svg");
+}
+
+body .ccm-ui .content-area .sec-area .input-gradient .input-append span:focus {
+  outline: 0;
+  border: 0;
+}
+
+body .ccm-ui .content-area .sec-area #captcha-input label + div {
+  background: #f16379;
+  background: linear-gradient(45deg, #f16379 0%, #f77062 100%);
+  color: #fff;
+  padding: 3px;
+  border-radius: 50px;
+  min-width: 320px;
+}
+
+body .ccm-ui .content-area .sec-area #captcha-input label + div input.ccm-input-captcha {
+  background-color: #fff;
+  color: #f16379;
+  line-height: normal;
+  height: 45px;
+  text-transform: unset;
+}
+
+body .ccm-ui .content-area .sec-area .btn-link {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  body .ccm-ui .content-area .sec-area .btn-link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body .ccm-ui .content-area .sec-area .btn-link {
+    font-size: 120%;
+  }
+}
+
+body .ccm-ui .content-area .sec-area .btn-submit {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+body .ccm-ui .content-area .sec-area#sec-forgot-password .btn-gradient {
+  font-size: 16px;
+  letter-spacing: 3px;
+  padding: 20px 40px;
+}
+
+body .ccm-ui .content-area .btn-facebook-login {
+  background: #4481eb;
+  background: linear-gradient(22deg, #4481eb 0%, #04befe 70%);
+  color: #fff;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  font-size: 16px;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+
+body .ccm-ui .content-area .btn-facebook-login:hover {
+  opacity: 0.75;
+}
+
+body .ccm-ui .content-area .sec-register {
+  padding: 1.5rem 0;
+}
+/*# sourceMappingURL=ccm.css.map */

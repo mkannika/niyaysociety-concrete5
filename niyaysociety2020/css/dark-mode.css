@@ -1,0 +1,296 @@
+.dark-mode {
+  background-color: #252e31;
+  color: #aeb0b8 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .dark-mode #toggle-menu {
+    background: #252e31;
+  }
+}
+
+.dark-mode .btn-gradient {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .btn-gradient2 {
+  background: #404e53;
+}
+
+.dark-mode .btn-gradient2:hover {
+  background: #aeb0b8;
+  border: 3px solid #404e53;
+  color: #404e53;
+}
+
+.dark-mode .btn-gradient2.is-checked {
+  background: #aeb0b8;
+  border: 3px solid #404e53;
+  color: #404e53;
+}
+
+.dark-mode .path-view,
+.dark-mode .path-follow {
+  fill: #aeb0b8;
+}
+
+.dark-mode .svg-logo .gradient-1,
+.dark-mode .svg-logo .gradient-2 {
+  fill: #aeb0b8;
+}
+
+@media screen and (max-width: 768px) {
+  .dark-mode .svg-logo .gradient-1,
+  .dark-mode .svg-logo .gradient-2 {
+    fill: #202527;
+  }
+}
+
+.dark-mode .bg3 {
+  background: #202527;
+}
+
+.dark-mode .item-work .info-work h3 {
+  color: #252e31;
+}
+
+.dark-mode .item-work .list-info .complete {
+  color: #aeb0b8;
+}
+
+.dark-mode .page-title span:before {
+  content: '';
+  background: #aeb0b8;
+}
+
+.dark-mode .popup .btn-alert a {
+  color: #202527;
+}
+
+.dark-mode .sec-inverse {
+  background: #202527;
+}
+
+.dark-mode .blog-list .blog-item h3 {
+  color: #252e31;
+}
+
+.dark-mode #agreement {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode #agreement h3 {
+  color: #fff;
+}
+
+.dark-mode #intro .search-box h1 {
+  background: transparent;
+  color: #aeb0b8;
+  -webkit-text-fill-color: #aeb0b8;
+}
+
+.dark-mode #intro .search-box .search-action .input-group-btn button {
+  background: #aeb0b8;
+  background: linear-gradient(45deg, #aeb0b8 20%, #aeb0b8 140%);
+}
+
+.dark-mode #intro:before {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+@media screen and (max-width: 768px) {
+  .dark-mode #header {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.dark-mode #header .main-menu li {
+  position: relative;
+}
+
+.dark-mode #header .main-menu li a {
+  color: #aeb0b8;
+}
+
+.dark-mode #header .main-menu li a.dropdown-toggle .caret {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 6px 0 6px;
+  border-color: #aeb0b8 transparent transparent transparent;
+}
+
+.dark-mode #header .main-menu li a + ul.dropdown-menu {
+  background: #252e31;
+  background: linear-gradient(45deg, #252e31 0%, #252e31 70%);
+  color: #fff;
+}
+
+.dark-mode #header .btn-group a {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode #header .btn-group.btn-inverse a span {
+  color: #252e31;
+}
+
+.dark-mode #header .btn-group.btn-inverse a:hover span {
+  color: #aeb0b8;
+}
+
+.dark-mode #header .btn-group.btn-inverse .login-msg a {
+  padding: 5px 20px !important;
+  border-radius: 50px !important;
+  border: none !important;
+}
+
+.dark-mode #header .btn-group a:hover {
+  color: #aeb0b8;
+}
+
+.dark-mode #header .btn-group a:hover span {
+  color: #aeb0b8;
+}
+
+.dark-mode #header .btn-group .login-msg a {
+  color: #aeb0b8;
+  padding: 5px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .dark-mode #header .header-menu .scroll .icon-bar {
+    background: #252e31;
+    background: linear-gradient(45deg, #252e31 0, #252e31 70%);
+  }
+  .dark-mode #header.open .btn-group.btn-inverse a {
+    background: #252e31;
+    background: linear-gradient(45deg, #252e31 0%, #252e31 100%);
+  }
+}
+
+.dark-mode.open #header .btn-group a {
+  background: #252e31;
+}
+
+.dark-mode.open #header .main-menu li a {
+  color: #252e31;
+}
+
+.dark-mode.open #header .main-menu li a.dropdown-toggle .caret {
+  border-color: #252e31 transparent transparent transparent;
+}
+
+.dark-mode #footer {
+  background: #202527;
+}
+
+.dark-mode .sidebar {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .slick-slider .slick-arrow {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .member-list .avatar-img a img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.dark-mode .main-area .page-header {
+  background: #202527;
+  background: linear-gradient(125deg, #202527 0%, #202527 70%);
+  color: #fff;
+}
+
+.dark-mode .main-area .page-info .page-desc .page-meta .status {
+  color: #aeb0b8;
+}
+
+.dark-mode .main-area .btn-follow a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .main-area .btn-follow a span {
+  color: #252e31;
+}
+
+.dark-mode .main-area .page-score-view li .icon-view,
+.dark-mode .main-area .page-score-view li .icon-score,
+.dark-mode .main-area .page-score-view li .icon-follower {
+  color: #aeb0b8;
+}
+
+.dark-mode #prologue {
+  border: 3px solid #202527;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode #prologue .body .btns-setting .slc-wrapper select {
+  color: #202527;
+  border: 3px solid #aeb0b8;
+}
+
+.dark-mode #prologue .body .btns-setting .btn-zoom li button {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  border: 3px solid #aeb0b8;
+}
+
+.dark-mode #chapters table thead {
+  background: #202527;
+}
+
+.dark-mode #chapters table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.dark-mode #chapters table tbody tr:nth-child(even) a {
+  color: #fff;
+}
+
+.dark-mode #chapters table a:hover {
+  color: inherit;
+}
+
+.dark-mode .button-share {
+  background: #202527;
+}
+
+.dark-mode #ranking .star-cb-group > input + label:before {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.dark-mode .guestbook .alert {
+  color: #202527;
+}
+
+.dark-mode .guestbook .title-comment {
+  color: #aeb0b8;
+}
+
+.dark-mode .guestbook .title-comment .svg-comment path {
+  fill: #aeb0b8;
+}
+
+.dark-mode .guestbook .comments .guestBook-entry .contentByLine .userName {
+  color: #f16379;
+}
+
+.dark-mode .guestbook .comments .guestBook-entry .contentByLine .userName a {
+  color: #202527;
+}
+
+.dark-mode .guestbook .comments .comment {
+  color: #252e31;
+}
+
+.dark-mode .pager ul li a {
+  background: rgba(255, 255, 255, 0.2);
+}
+/*# sourceMappingURL=dark-mode.css.map */

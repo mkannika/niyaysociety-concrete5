@@ -1,0 +1,282 @@
+// Menu
+.main-menu{	
+	li{
+		position: relative;
+		a{
+			color: $pink;
+			@media screen and (min-width: 768px) and (max-width: 991px) {
+				color: #fff;
+			}
+			text-decoration: none;
+			font-weight: 500;
+			padding: 5px 20px;
+			display: block;
+			@include font-size-18();
+			@include animation-transition(.75s, linear);
+			&:hover{
+				opacity: 0.75;
+			}
+			&.dropdown-toggle{
+				cursor: pointer;
+				padding-right: 30px;
+				display: inline-block;
+				position: relative;
+				.caret{
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 8px 6px 0 6px;
+					border-color: $pink transparent transparent transparent;
+					@media screen and (min-width: 768px) and (max-width: 991px) {
+						border-color: #fff transparent transparent transparent;
+					}
+					position: absolute;
+					right: 10px;
+					top: calc(50% - 4px);
+				}
+			}
+			& + ul.dropdown-menu{
+				max-height: 0;
+				position: absolute;
+				overflow: hidden;
+				@include make-gradient(#f05f83, #f77062, 45deg, #fff);
+				width: 200px;
+				border-radius: 10px;
+				left: 0;
+				z-index: 10;
+				@include animation-transition(.75s, linear);
+				@media screen and (max-width: 768px) {
+					width: calc(100vw - 30px);
+					position: relative;
+				}
+				a{
+					color: #fff;
+					padding: 2px 15px;
+					position: relative;
+					@include animation-transition(.25s, ease-in);
+					&:hover{
+						background-color: rgba(255,255,255,0.2);
+						opacity: 1;
+					}
+				}
+			}
+		}
+		&.open .dropdown-menu{
+			max-height: 1000px;
+			padding: 10px 0;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
+}
+
+// Header
+#header{
+	padding: 15px 0;
+	position: relative;
+	z-index: 1;
+	.logo {
+		width: 50px;
+		display: inline-block;
+		margin-right: 20px;
+		position: relative;
+		z-index: 1;
+		@media screen and (max-width: 768px) {
+			position: fixed;
+			top: 10px;
+		}
+	}
+	.header-menu{
+		width: 100%;
+		@media screen and (min-width: 769px) {
+			width: calc(100% - 70px);
+		}
+	}
+	.btn-group{
+		&.btn-inverse{
+			a{
+				background: transparent;
+				border: 2px solid #fff;
+				padding: 0;
+				span{
+					background: transparent;
+					display: block;
+					color: #fff;
+				}
+				&:hover{
+					opacity: 1;
+					span{
+						background-color: #fff;
+						color: $pink;
+					}
+				}
+			}
+			.login-msg{
+				span{
+					color: #fff;
+				}
+				a{
+					text-decoration: none;
+					color: #fff;
+					text-decoration: none;
+					border: none;
+					border-bottom: 2px solid #fff;
+					border-radius: 0;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		@media screen and (min-width: 769px) {
+			li + li{
+				margin-left: 20px;
+			}
+		}
+		@media screen and (max-width: 768px){
+			width: 100%;
+			justify-content: center;
+			margin-top: 20px;
+			ul{
+				justify-content: center;
+			}
+		}
+		@media screen and (max-width: 768px){
+			ul{
+				display: block;
+				text-align: center;
+			}
+			li + li{
+				margin-top: 15px;
+			}
+			a{
+				width: 280px;
+			}
+		}
+		@media screen and (min-width: 576px) and (max-width: 768px){
+			li + li{
+				margin-top: 0;
+				margin-left: 15px;
+			}
+		}
+		a{
+			@include make-button(18px, 3px, 50px);
+			span{
+				@include animation-transition(.25s, ease-in);
+				@include make-button(inherit, 10px 60px, 50px);
+				display: block;
+				color: #fff;
+			}
+			&:hover{
+				color: $pink;
+				span{
+					background-color: #fff;
+					color: $pink;
+				}
+			}
+		}
+		.login-msg{
+			a{
+				color: $pink;
+			}	
+		}
+	}
+	#navbar {
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	@media screen and (min-width: 768px) {
+		padding: 30px 0;
+	}
+	@media screen and (max-width: 768px) {
+		position: fixed;
+		background-color: #fff;
+		height: 65px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		.header-menu{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			top: 0;
+			left: 0;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			transform: translateX(calc(100% + 15px));
+			transition: all .25s linear;
+			.scroll{
+				.icon-bar{
+					background: #f16379;
+					background: linear-gradient(45deg, #f16379 0, #f36e66 70%);
+					@include animation-transition(.25s, ease-in);
+				}
+			}
+		}
+		&.open {
+			.icon-bar{
+				position: relative;
+				&:first-child{
+					transform: rotate(45deg);
+					top: 11px;
+				}
+				&:nth-child(2){
+					display: none;
+				}
+				&:last-child{
+					transform: rotate(-45deg);
+					top: 1px;
+				}
+			}
+			.header-menu{
+				transform: translateX(0);
+			}
+			.btn-group{
+				&.btn-inverse{
+					a{
+						border: none;
+						padding: 0;
+						background: $pink;
+						background: linear-gradient(45deg, $pink 0%, #f77062 100%);
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+#toggle-menu{
+	@media screen and (min-width: 769px){
+		display: none;
+	}
+	@media screen and (max-width: 768px){
+		top: 10px;
+	}
+	display: block;
+	position: fixed;
+	z-index: 1;
+	right: 15px;
+	top: 15px;
+	width: 45px;
+	height: 45px;
+	padding: 10px;
+	background: #f16379;
+	background: linear-gradient(45deg, #f16379 0, #f36e66 70%);
+	border-radius: 4px;
+	box-shadow: none;
+	@include base-transition();
+	.icon-bar{
+		& + .icon-bar{
+			margin-top: 8px
+		}
+		background-color: #fff;
+		width: 100%;
+		height: 2px;
+		@include base-transition();
+	}
+}
