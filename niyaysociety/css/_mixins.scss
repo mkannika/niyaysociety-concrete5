@@ -1,0 +1,173 @@
+// Typography
+$base-font: 'Bai Jamjuree', 'Roboto', sans-serif;
+$title-font: 'Bai Jamjuree', sans-serif;
+$base-font-size: 14px;
+$line-height: 26px;
+$h1: 20px;
+$h2: 18px;
+$h3: 16px;
+
+$italic: italic;
+$bold: bold;
+$base-color: #444;
+
+$transition: all .25s ease-out;
+
+//Color
+$pink: #f16379;
+
+// Border Style
+$solid: solid;
+$dotted: dotted;
+$dashed: dashed;
+
+// Spacing
+$space30: 3%;
+$space15: 1.5%;
+
+// Background
+$cover: cover;
+$transparent: transparent;
+$no-repeat: no-repeat;
+$base-bg: #fff;
+
+// Position
+$relative: relative;
+$absolute: absolute;
+
+// Alignment
+$space-between: space-between;
+$middle: middle;
+$center: center;
+$right: right;
+$left: left;
+$flex: flex;
+$block: block;
+$inline: inline;
+$inline-block: inline-block;
+$baseline: baseline;
+
+// Display
+$none: none;
+$underline: underline;
+
+@mixin reset-margin-padding{
+	padding: 0;
+	margin: 0;
+}
+
+@mixin sec-area($padding){
+	padding-top: $padding;
+	padding-bottom: $padding;
+}
+
+@mixin page-full {
+	width: 100%;
+	height: 100vh;
+}
+
+@mixin opacity{
+	opacity: 0.85;
+	filter: opacity(80);
+}
+
+@mixin margin-auto{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@mixin padding-top-bottom($value){
+	padding: $value 0; 
+}
+
+@mixin make-container($container, $padding) {
+	max-width: none;
+	width: $container;
+	position: $relative;
+	padding-left: $padding;
+	padding-right: $padding;
+	@include margin-auto();
+}
+
+@mixin make-gradient($bg1, $bg2, $deg, $color) {
+	background: $bg1;
+	background: linear-gradient($deg, $bg1 0%, $bg2 70%);
+	color: $color;
+}
+
+@mixin container-fluid($padding){
+	padding-left: $padding;
+	padding-right: $padding;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin base-transition{
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	transition: $transition;
+}
+
+@mixin d-flex($justify, $align){
+	flex-wrap: wrap;
+	display: $flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin row($margin){
+	flex-wrap: wrap;
+	display: $flex;
+	margin-left: -$margin;
+	margin-right: -$margin;
+}
+
+@mixin grid($width, $padding){
+	padding-left: $padding;
+	padding-right: $padding;
+	width: $width;
+}
+
+@mixin btn-gradient{
+	color: #fff;
+	text-decoration: $none;
+	display: $inline-block;
+	@include animation-transition(.25s, ease-in);
+	@include make-button(20px, 20px 80px, 50px);
+	@include make-gradient(#f05f83, #f77062, 45deg, #fff);
+	&:hover{
+		opacity: 0.75;
+		@include make-gradient(#f05f83, #f77062, 45deg, #fff);
+	}
+}
+
+@mixin font-size-base{
+	font-size: 16px;
+}
+
+@mixin font-size-18{
+	@media screen and (min-width: 768px){
+		font-size: 18px;
+	}
+	@media screen and (max-width: 767px){
+		font-size: 120%;
+	}
+}
+
+@mixin animation-transition($duration, $effect) {
+	-webkit-transition: all $duration $effect;
+	-moz-transition: all $duration $effect;
+	transition: all $duration $effect;
+}
+
+//  Media
+@mixin make-button($size, $space, $radius) {
+	font-size: $size;
+	padding: $space;
+	border-radius: $radius;
+}
+
+@mixin nowrap{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
